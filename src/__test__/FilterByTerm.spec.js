@@ -30,3 +30,9 @@ test("should throw an error with empty array", () => {
     "inputArray cannot be empty"
   );
 });
+
+test("should throw an error with empty searchTerm", () => {
+  expect(() => filterByTerm([1, 2, 3], "")).toThrowError(
+    "searchterm cannot be empty"
+  );
+});
